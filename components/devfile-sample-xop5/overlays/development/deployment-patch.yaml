@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xop5
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0022-tenant/tkwch-fix-0075-0022-app/devfile-sample-xop5@sha256:484c9454c66fd3b341bdeadedd63e9ded3f17a0c1ce53a649092135b4bb5dcd3
+        name: my-nodejs
+        resources: {}
+status: {}
